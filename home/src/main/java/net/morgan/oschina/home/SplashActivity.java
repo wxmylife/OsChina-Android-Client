@@ -14,13 +14,12 @@ import net.morgan.oschina.base.moduleinterface.provider.IHomeProvider;
 @Route(path = IHomeProvider.HOME_ACT_SPLASH)
 public class SplashActivity extends AppCompatActivity {
 
-    private Handler mHandler;
+    private Handler mHandler=new Handler();
 
 
     @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        mHandler = new Handler(getMainLooper());
     }
 
     @Override

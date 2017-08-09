@@ -13,7 +13,7 @@ android {
         versionCode  rootProject.ext.android.versionCode
         versionName  rootProject.ext.android.versionName
 
-        if (!rootProject.ext.isMouleDebugHome) {
+        if (!rootProject.ext.isMouleDebugSearch) {
             applicationId "net.morgan.oschina.search"
         }
 

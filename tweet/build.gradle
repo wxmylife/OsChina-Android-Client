@@ -14,7 +14,7 @@ android {
         versionCode  rootProject.ext.android.versionCode
         versionName  rootProject.ext.android.versionName
 
-        if (!rootProject.ext.isMouleDebugHome) {
+        if (!rootProject.ext.isMouleDebugTweet) {
             applicationId "net.morgan.oschina.tweet"
         }
 

@@ -12,13 +12,13 @@ import net.morgan.oschina.base.moduleinterface.router.ModuleRouter;
 public class UserIntent {
 
     private static boolean hasModule() {
-        return ModuleManager.getInstance().hasModule(IUserProvider.HOME_MAIN_SERVICE);
+        return ModuleManager.getInstance().hasModule(IUserProvider.USER_MAIN_SERVICE);
     }
 
-    public static void launchHome(int tabType) {
+    public static void launchUser(int tabType) {
         ModuleBundle bundle=new ModuleBundle();
-        bundle.put(IUserProvider.HOME_TABTYPE,tabType);
-        ModuleRouter.newInstance(IUserProvider.HOME_ACT_HOME)
+        bundle.put(IUserProvider.USER_MAIN_SERVICE,tabType);
+        ModuleRouter.newInstance(IUserProvider.USER_MAIN_SERVICE)
             .withBundle(bundle)
             .navigation();
     }

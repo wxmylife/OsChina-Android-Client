@@ -4,7 +4,10 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import net.morgan.oschina.base.BaseApplication;
 import net.morgan.oschina.base.LG;
 import net.morgan.oschina.base.moduleinterface.config.ModuleOptions;
+import net.morgan.oschina.base.moduleinterface.provider.ICommentProvider;
 import net.morgan.oschina.base.moduleinterface.provider.IHomeProvider;
+import net.morgan.oschina.base.moduleinterface.provider.ISearchProvider;
+import net.morgan.oschina.base.moduleinterface.provider.ITweetProvider;
 import net.morgan.oschina.base.moduleinterface.provider.IUserProvider;
 import net.morgan.oschina.base.moduleinterface.router.ModuleManager;
 
@@ -28,8 +31,11 @@ public class CustomApplication extends BaseApplication {
 
         ARouter.init(this);
         ModuleOptions.ModuleBuilder builder=new ModuleOptions.ModuleBuilder(this)
-            .addModule(IUserProvider.HOME_MAIN_SERVICE,IUserProvider.HOME_MAIN_SERVICE)
-            .addModule(IHomeProvider.HOME_MAIN_SERVICE,IHomeProvider.HOME_MAIN_SERVICE);
+            .addModule(IUserProvider.USER_MAIN_SERVICE,IUserProvider.USER_MAIN_SERVICE)
+            .addModule(IHomeProvider.HOME_MAIN_SERVICE,IHomeProvider.HOME_MAIN_SERVICE)
+            .addModule(ICommentProvider.COMMENT_MAIN_SERVICE,ICommentProvider.COMMENT_MAIN_SERVICE)
+            .addModule(ISearchProvider.SEARCH_MAIN_SERVICE,ISearchProvider.SEARCH_MAIN_SERVICE)
+            .addModule(ITweetProvider.TWEET_MAIN_SERVICE,ITweetProvider.TWEET_MAIN_SERVICE);
 
         ModuleManager.getInstance().init(builder.build());
     }

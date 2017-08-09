@@ -31,6 +31,19 @@ dependencies {
     annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
 
     if (rootProject.ext.isMouleDebugHome) {
-        compile project(':common')
+        compile project(':home')
     }
+    if (rootProject.ext.isMouleDebugHome) {
+        compile project(':comment')
+    }
+    if (rootProject.ext.isMouleDebugHome) {
+        compile project(':search')
+    }
+    if (rootProject.ext.isMouleDebugHome) {
+        compile project(':tweet')
+    }
+    if (rootProject.ext.isMouleDebugHome) {
+        compile project(':user')
+    }
+
 }

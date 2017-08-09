@@ -16,6 +16,11 @@ android {
         if (!rootProject.ext.isMouleDebugHome) {
             applicationId "net.morgan.oschina.home"
         }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
 
     }
     buildTypes {

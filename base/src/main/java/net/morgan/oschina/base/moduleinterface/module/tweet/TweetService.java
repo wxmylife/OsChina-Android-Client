@@ -16,6 +16,6 @@ public class TweetService {
 
     public static Fragment getTweetFragment(Object... args) {
         if (!hasTweet()) return null;
-        return ServiceManager.getInstance().getModule3Provider().newInstance(args);
+        return ServiceManager.getInstance().getTweetProvider().newInstance(args);
     }
 }

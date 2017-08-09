@@ -13,8 +13,13 @@ android {
         versionCode  rootProject.ext.android.versionCode
         versionName  rootProject.ext.android.versionName
 
-        if (!rootProject.ext.isMouleDebugHome) {
+        if (!rootProject.ext.isMouleDebugComment) {
             applicationId "net.morgan.oschina.comment"
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
         }
 
     }
