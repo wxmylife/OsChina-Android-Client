@@ -8,7 +8,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import net.morgan.oschina.base.BaseFragment;
-import net.morgan.oschina.base.moduleinterface.module.home.HomeService;
+import net.morgan.oschina.common.moduleinterface.module.home.HomeService;
 
 /**
  * Created by wxmylife on 2017/4/21.

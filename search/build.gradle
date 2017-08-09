@@ -1,4 +1,4 @@
-if (rootProject.ext.isMouleDebugHome){
+if (rootProject.ext.isMouleDebugSearch){
     apply plugin: 'com.android.library'
 } else {
     apply plugin: 'com.android.application'
@@ -15,6 +15,13 @@ android {
 
         if (!rootProject.ext.isMouleDebugSearch) {
             applicationId "net.morgan.oschina.search"
+        }
+
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
         }
 
     }

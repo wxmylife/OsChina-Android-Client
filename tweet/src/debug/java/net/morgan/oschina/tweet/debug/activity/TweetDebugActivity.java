@@ -3,7 +3,7 @@ package net.morgan.oschina.tweet.debug.activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import net.morgan.oschina.base.BaseActivity;
-import net.morgan.oschina.base.moduleinterface.module.tweet.TweetService;
+import net.morgan.oschina.common.moduleinterface.module.tweet.TweetService;
 import net.morgan.oschina.tweet.R;
 
 /**

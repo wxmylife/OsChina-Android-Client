@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.widget.Toast;
 import com.alibaba.android.arouter.facade.annotation.Route;
-import net.morgan.oschina.base.moduleinterface.provider.IHomeProvider;
+import net.morgan.oschina.common.moduleinterface.provider.IHomeProvider;
 
 /**
  * Created by wxmylife on 2017/4/21.

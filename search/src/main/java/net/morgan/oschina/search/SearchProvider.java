@@ -3,9 +3,9 @@ package net.morgan.oschina.search;
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import com.alibaba.android.arouter.facade.annotation.Route;
-import net.morgan.oschina.base.moduleinterface.provider.ISearchProvider;
+import net.morgan.oschina.common.moduleinterface.provider.ISearchProvider;
 
-import static net.morgan.oschina.base.moduleinterface.provider.ISearchProvider.SEARCH_MAIN_SERVICE;
+import static net.morgan.oschina.common.moduleinterface.provider.ISearchProvider.SEARCH_MAIN_SERVICE;
 
 /**
  * Created by wxmylife on 2017/4/21.

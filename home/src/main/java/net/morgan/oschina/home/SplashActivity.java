@@ -5,8 +5,7 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import com.alibaba.android.arouter.facade.annotation.Route;
-import net.morgan.oschina.base.moduleinterface.module.home.HomeIntent;
-import net.morgan.oschina.base.moduleinterface.provider.IHomeProvider;
+import net.morgan.oschina.common.moduleinterface.provider.IHomeProvider;
 
 /**
  * Created by wxmylife on 2017/4/20.
@@ -25,12 +24,12 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        mHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                HomeIntent.launchHome(1);
-                finish();
-            }
-        }, 1500);
+        // mHandler.postDelayed(new Runnable() {
+        //     @Override
+            // public void run() {
+            //     HomeIntent.launchHome(1);
+            //     finish();
+            // }
+        // }, 1500);
     }
 }

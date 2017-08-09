@@ -1,4 +1,4 @@
-if (rootProject.ext.isMouleDebugHome){
+if (rootProject.ext.isMouleDebugTweet){
     apply plugin: 'com.android.library'
 } else {
     apply plugin: 'com.android.application'

@@ -3,9 +3,9 @@ package net.morgan.oschina.tweet;
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import com.alibaba.android.arouter.facade.annotation.Route;
-import net.morgan.oschina.base.moduleinterface.provider.ITweetProvider;
+import net.morgan.oschina.common.moduleinterface.provider.ITweetProvider;
 
-import static net.morgan.oschina.base.moduleinterface.provider.ITweetProvider.TWEET_MAIN_SERVICE;
+import static net.morgan.oschina.common.moduleinterface.provider.ITweetProvider.TWEET_MAIN_SERVICE;
 
 /**
  * Created by wxmylife on 2017/4/21.
