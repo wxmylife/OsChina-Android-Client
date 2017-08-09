@@ -32,18 +32,19 @@ android {
         }
     }
 
-//    sourceSets {
-//        main {
-//            if (!rootProject.ext.isMouleDebugHome) {
-//                Manifest.srcFile 'src/debug/AndroidManifest.xml'
-//                java.srcDir 'src/debug/java/'
-//            } else {
-//                Manifest.srcFile 'src/release/AndroidManifest.xml'
-//                java.srcDir 'src/release/java/'
-//            }
-//
-//        }
-//    }
+    sourceSets {
+        main {
+            if (!rootProject.ext.isMouleDebugHome) {
+                manifest.srcFile 'src/debug/AndroidManifest.xml'
+                java.srcDir 'src/debug/java/'
+                res.srcDirs = ['src/debug/res']
+            } else {
+                manifest.srcFile 'src/release/AndroidManifest.xml'
+                java.srcDir 'src/release/java/'
+            }
+
+        }
+    }
 }
 
 dependencies {
