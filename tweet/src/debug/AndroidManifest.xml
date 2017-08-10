@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.morgan.oschina.tweet">
+
+    <application
+        android:theme="@style/AppTheme"
+        android:allowBackup="true"
+        android:name=".debug.TweetDebugApplication"
+        android:supportsRtl="true">
+        <activity android:name=".debug.activity.TweetDebugActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

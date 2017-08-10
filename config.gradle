@@ -1,0 +1,42 @@
+def supportVersion = "25.3.1"
+def butterKnifeVersion = "7.0.1"
+
+
+ext {
+    android = [compileSdkVersion: 25,
+               buildToolsVersion: "25.0.3",
+               applicationId    : "net.morgan.oschina.app",
+
+               minSdkVersion    : 14,
+               targetSdkVersion : 25,
+               versionCode      : 1,
+               versionName      : "1.0",]
+
+    dependencies = ["support-v4"          : "com.android.support:support-v4:${supportVersion}",
+                    "appcompat-v7"        : "com.android.support:appcompat-v7:${supportVersion}",
+                    "design"              : "com.android.support:design:${supportVersion}",
+                    "recyclerview"        : "com.android.support:recyclerview-v7:${supportVersion}",
+                    "cardview"            : "com.android.support:cardview-v7:${supportVersion}",
+
+
+
+                    "arouter-api"         : "com.alibaba:arouter-api:1.2.2",
+                    "arouter-compiler"    : "com.alibaba:arouter-compiler:1.1.3",
+                    "arouter-annotation"  : "com.alibaba:arouter-compiler:1.1.3",
+                    //分包
+                    "multidex"            : "com.android.support:multidex:1.0.1",
+
+
+                    "butterknife"         : "com.jakewharton:butterknife:${butterKnifeVersion}",
+                    "butterknife-compiler": "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",]
+
+    //home是否是作为模块，true的时候是，false的时候可以独立运行，不想改了ORZ
+    isMouleDebugHome = true;
+    isMouleDebugUser = true;
+    isMouleDebugComment = true;
+    isMouleDebugSearch = true;
+    isMouleDebugTweet = true;
+    isMouleDebugUser = true;
+    //module1是否是作为模块，true的时候是，false的时候可以独立运行
+    isModule1Debug = true;
+}

@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="net.morgan.oschina.common">
+    <application android:allowBackup="true" android:label="@string/common_name"
+        tools:replace="label"
+        android:supportsRtl="true">
+
+    </application>
+
+</manifest>
