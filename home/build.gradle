@@ -3,6 +3,7 @@ if (rootProject.ext.isMouleDebugHome){
 } else {
     apply plugin: 'com.android.application'
 }
+
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
     buildToolsVersion rootProject.ext.android.buildToolsVersion
@@ -15,6 +16,12 @@ android {
 
         if (!rootProject.ext.isMouleDebugHome) {
             applicationId "net.morgan.oschina.home"
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
         }
 
     }

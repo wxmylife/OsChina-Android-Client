@@ -1,4 +1,4 @@
-if (rootProject.ext.isMouleDebugHome){
+if (rootProject.ext.isMouleDebugSearch){
     apply plugin: 'com.android.library'
 } else {
     apply plugin: 'com.android.application'
@@ -13,8 +13,15 @@ android {
         versionCode  rootProject.ext.android.versionCode
         versionName  rootProject.ext.android.versionName
 
-        if (!rootProject.ext.isMouleDebugHome) {
+        if (!rootProject.ext.isMouleDebugSearch) {
             applicationId "net.morgan.oschina.search"
+        }
+
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
         }
 
     }
@@ -25,18 +32,19 @@ android {
         }
     }
 
-//    sourceSets {
-//        main {
-//            if (!rootProject.ext.isMouleDebugHome) {
-//                Manifest.srcFile 'src/debug/AndroidManifest.xml'
-//                java.srcDir 'src/debug/java/'
-//            } else {
-//                Manifest.srcFile 'src/release/AndroidManifest.xml'
-//                java.srcDir 'src/release/java/'
-//            }
-//
-//        }
-//    }
+    sourceSets {
+        main {
+            if (!rootProject.ext.isMouleDebugHome) {
+                manifest.srcFile 'src/debug/AndroidManifest.xml'
+                java.srcDir 'src/debug/java/'
+                res.srcDirs = ['src/debug/res']
+            } else {
+                manifest.srcFile 'src/release/AndroidManifest.xml'
+                java.srcDir 'src/release/java/'
+            }
+
+        }
+    }
 }
 
 dependencies {

@@ -1,4 +1,4 @@
-if (rootProject.ext.isMouleDebugHome){
+if (rootProject.ext.isMouleDebugUser){
     apply plugin: 'com.android.library'
 } else {
     apply plugin: 'com.android.application'
@@ -14,7 +14,7 @@ android {
         versionCode  rootProject.ext.android.versionCode
         versionName  rootProject.ext.android.versionName
 
-        if (!rootProject.ext.isMouleDebugHome) {
+        if (!rootProject.ext.isMouleDebugUser) {
             applicationId "net.morgan.oschina.user"
         }
 

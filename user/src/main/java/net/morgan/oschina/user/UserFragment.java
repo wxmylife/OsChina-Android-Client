@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import net.morgan.oschina.base.BaseFragment;
 import net.morgan.oschina.base.dao.UserInfo;
-import net.morgan.oschina.base.moduleinterface.module.comment.CommentIntent;
+import net.morgan.oschina.common.moduleinterface.module.comment.CommentIntent;
 
 /**
  * Created by wxmylife on 2017/4/21.

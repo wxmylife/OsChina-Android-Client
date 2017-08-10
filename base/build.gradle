@@ -11,11 +11,9 @@ android {
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
 
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments = [moduleName: project.getName()]
-            }
-        }
+
+
+
     }
     buildTypes {
         release {
@@ -36,7 +34,5 @@ dependencies {
     compile rootProject.ext.dependencies["design"]
     compile rootProject.ext.dependencies["cardview"]
 
-    compile rootProject.ext.dependencies["arouter-api"]
-    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
-    testCompile 'junit:junit:4.12'
+//    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
 }

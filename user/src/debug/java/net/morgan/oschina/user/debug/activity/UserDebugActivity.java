@@ -3,7 +3,7 @@ package net.morgan.oschina.user.debug.activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import net.morgan.oschina.base.BaseActivity;
-import net.morgan.oschina.base.moduleinterface.module.user.UserService;
+import net.morgan.oschina.common.moduleinterface.module.user.UserService;
 import net.morgan.oschina.user.R;
 
 /**

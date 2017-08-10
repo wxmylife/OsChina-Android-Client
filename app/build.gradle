@@ -9,6 +9,7 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
+
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [moduleName: project.getName()]
@@ -31,6 +32,19 @@ dependencies {
     annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
 
     if (rootProject.ext.isMouleDebugHome) {
-        compile project(':common')
+        compile project(':home')
     }
+    if (rootProject.ext.isMouleDebugComment) {
+        compile project(':comment')
+    }
+    if (rootProject.ext.isMouleDebugSearch) {
+        compile project(':search')
+    }
+    if (rootProject.ext.isMouleDebugTweet) {
+        compile project(':tweet')
+    }
+    if (rootProject.ext.isMouleDebugUser) {
+        compile project(':user')
+    }
+
 }

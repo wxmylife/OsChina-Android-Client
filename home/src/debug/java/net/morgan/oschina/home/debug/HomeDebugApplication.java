@@ -3,9 +3,9 @@ package net.morgan.oschina.home.debug;
 import com.alibaba.android.arouter.launcher.ARouter;
 import net.morgan.oschina.base.BaseApplication;
 import net.morgan.oschina.base.LG;
-import net.morgan.oschina.base.moduleinterface.config.ModuleOptions;
-import net.morgan.oschina.base.moduleinterface.provider.IHomeProvider;
-import net.morgan.oschina.base.moduleinterface.router.ModuleManager;
+import net.morgan.oschina.common.moduleinterface.config.ModuleOptions;
+import net.morgan.oschina.common.moduleinterface.provider.IHomeProvider;
+import net.morgan.oschina.common.moduleinterface.router.ModuleManager;
 
 /**
  * Created by wxmylife on 2017/4/21.

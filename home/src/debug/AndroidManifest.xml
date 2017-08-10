@@ -7,7 +7,7 @@
         android:allowBackup="true"
         android:name=".debug.HomeDebugApplication"
         android:supportsRtl="true">
-        <activity android:name="com.wxmylife.morgan.home.SplashActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

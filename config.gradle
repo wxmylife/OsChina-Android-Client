@@ -32,6 +32,11 @@ ext {
 
     //home是否是作为模块，true的时候是，false的时候可以独立运行，不想改了ORZ
     isMouleDebugHome = true;
+    isMouleDebugUser = true;
+    isMouleDebugComment = true;
+    isMouleDebugSearch = true;
+    isMouleDebugTweet = true;
+    isMouleDebugUser = true;
     //module1是否是作为模块，true的时候是，false的时候可以独立运行
     isModule1Debug = true;
 }

@@ -10,7 +10,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import net.morgan.oschina.base.BaseActivity;
 import net.morgan.oschina.base.dao.UserInfo;
 
-import static net.morgan.oschina.base.moduleinterface.provider.ICommentProvider.COMMENT_ACT_MAIN;
+import static net.morgan.oschina.common.moduleinterface.provider.ICommentProvider.COMMENT_ACT_MAIN;
 
 /**
  * Created by wxmylife on 2017/8/8.

@@ -11,14 +11,14 @@ import java.util.HashMap;
 import java.util.Map;
 import net.morgan.oschina.base.BaseActivity;
 import net.morgan.oschina.base.LG;
-import net.morgan.oschina.base.moduleinterface.module.search.SearchService;
-import net.morgan.oschina.base.moduleinterface.module.tweet.TweetService;
-import net.morgan.oschina.base.moduleinterface.module.user.UserService;
-import net.morgan.oschina.base.moduleinterface.provider.IHomeProvider;
-import net.morgan.oschina.base.moduleinterface.provider.ISearchProvider;
-import net.morgan.oschina.base.moduleinterface.provider.ITweetProvider;
-import net.morgan.oschina.base.moduleinterface.provider.IUserProvider;
-import net.morgan.oschina.base.moduleinterface.router.ModuleManager;
+import net.morgan.oschina.common.moduleinterface.module.search.SearchService;
+import net.morgan.oschina.common.moduleinterface.module.tweet.TweetService;
+import net.morgan.oschina.common.moduleinterface.module.user.UserService;
+import net.morgan.oschina.common.moduleinterface.provider.IHomeProvider;
+import net.morgan.oschina.common.moduleinterface.provider.ISearchProvider;
+import net.morgan.oschina.common.moduleinterface.provider.ITweetProvider;
+import net.morgan.oschina.common.moduleinterface.provider.IUserProvider;
+import net.morgan.oschina.common.moduleinterface.router.ModuleManager;
 
 /**
  * Created by wxmylife on 2017/4/20.
