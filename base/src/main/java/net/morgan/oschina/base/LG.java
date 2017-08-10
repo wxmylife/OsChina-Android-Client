@@ -8,16 +8,15 @@ import android.util.Log;
 
 public class LG {
 
-    public static boolean isDebug = false;
-
     private static final String DETAULT_TAG = "---Module Sample Log>>>";
+    public static boolean isDebug = false;
 
     public static void d(String msg) {
         d(DETAULT_TAG, msg);
     }
 
     private static void d(String tag, String msg) {
-        Log.i(tag, msg);
+        Log.d(tag, msg);
     }
 
     public static void e(String msg) {
